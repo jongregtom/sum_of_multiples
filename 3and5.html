@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Sum of Multiples</title>
+</head>
+<body>
+  <h1>Sum of Multiples</h1>
+  <p>Enter two positive numbers to find the sum of those multiples below 1000.</p>
+
+  <script>
+    let sum = 0;
+      for (let i = 0; i<1000; i++) {
+        if (i % 3===0 || i % 5===0) {
+          sum += i;
+        }
+      }
+    alert('The sum of multiples of 3 and 5 from 0-1000 is ' + sum);
+  </script>
+</body>
+</html>
